@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	
+	<!-- sample03 -->
+	<!-- scope : prototype, request, session, singleton --> 
+	<!-- <bean id="messageBean" class="sample03.MessageBeanKo" scope="prototype"></bean>생성자 호출 -->
+	<!-- MessageBeanKo 를 bean 으로 생성합니다. -->
+	
+	<context:component-scan base-package="sample03"></context:component-scan>
+	<!-- 어노테이션 썻다는 뜻 -->
+	
+	<!-- sample04 -->
+	<!-- 
+	<bean id="calcAdd" class="sample04.CalcAdd" ></bean>생성자 호출
+	<bean id="calcMul" class="sample04.CalcMul" ></bean>생성자 호출 
+	-->
+	
+	<context:component-scan base-package="sample04"></context:component-scan>
+	<!-- sample05 -->
+	<!-- <bean id="sungJukImpl" class="sample05.SungJukImpl" ></bean>생성자 호출 -->
+	
+	<context:component-scan base-package="sample05"></context:component-scan>
+	
+</beans>
