@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	<!-- sample01 -->
+	<!-- <context:component-scan base-package="sample01"></context:component-scan> -->
+	
+	<!-- sample02 -->
+	<context:component-scan base-package="spring.conf"></context:component-scan>
+	<!-- xml에 컨스트럭터를 안만들고 컨피그레이션 파일에 빈을 만들었으니 그것을 보세요 라는 뜻 -->
+
+	<!-- sample03 -->
+	<context:component-scan base-package="sample03"></context:component-scan>
+	
+	<!-- sample05 -->
+	<context:component-scan base-package="sample05"></context:component-scan>
+</beans>
